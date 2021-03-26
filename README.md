@@ -1,9 +1,10 @@
+<p align="center">
+  <img src="/assets/portex.ico">
+</p>
+
 # Portex
 multi-threaded port scanner in python3 superfast
 >please note sometimes you will give errors like, socket.gaierror: [Errno -3] Temporary failure in name resolution for it try to upgrade you pip 'pip3 install --upgrade pip'
-
-![trial](assets/MasksOn.gif)
-
 
 ## Git Installation
 ```
