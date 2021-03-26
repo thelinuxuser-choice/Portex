@@ -25,10 +25,10 @@ python3 portex.py www.examplep -p 1-1000
 ```
 ## Pics
 <p align="center">
-  <img src="/assets/1.png" width="100" height="100">
+  <img src="/assets/1.png" width="500" height="200">
 </p>
 <p align="center">
-  <img src="/assets/2.png" width="100" height="100">
+  <img src="/assets/2.png" width="500" height="200">
 </p>
 
 
