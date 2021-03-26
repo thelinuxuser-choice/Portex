@@ -22,7 +22,7 @@ $ pip3 install --upgrade pip
 python3 portex.py www.example.com [default :1-65535]
 python3 portex.py www.examplep -p 1-1000
 ```
-## windows
+## Pics
 <p align="center">
   <img src="/assets/1.png">
 </p>
