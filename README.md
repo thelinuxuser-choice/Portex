@@ -26,6 +26,10 @@ python3 portex.py www.examplep -p 1-1000
 <p align="center">
   <img src="/assets/1.png">
 </p>
+<p align="center">
+  <img src="/assets/2.png">
+</p>
+
 
 ## Support & Contributions
 - Please ⭐️ this repository if this project helped you!
