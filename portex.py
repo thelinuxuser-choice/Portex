@@ -95,8 +95,4 @@ def main():
     print(f"Scanning Took {round(end - start, 2)}s")
 
 
-if __name__ == '__main__':
-    try:
-        main()
-    except KeyboardInterrupt:
-        sys.exit()
+main()
