@@ -2,7 +2,7 @@
 ##########thelinuxuxer-choice#################
 #############subodha prabash ##########
 ###########port scanner ######
-
+import os
 #clear
 def clear_sc():
     # for windows OS
