@@ -8,7 +8,8 @@ import time
 import sys
 import os
 
-#clear
+
+# clear
 def clear_sc():
     # for windows OS
     if os.name == "nt":
@@ -18,18 +19,35 @@ def clear_sc():
     else:
         os.system("clear")
 
+
 clear_sc()
+
+
 #####end loding######
 
 # colored text and background
-def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
-def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
-def prPurple(skk): print("\033[95m {}\033[00m" .format(skk))
-def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
-def prLightGray(skk): print("\033[97m {}\033[00m" .format(skk))
-def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
+def prRed(skk): print("\033[91m {}\033[00m".format(skk))
+
+
+def prGreen(skk): print("\033[92m {}\033[00m".format(skk))
+
+
+def prYellow(skk): print("\033[93m {}\033[00m".format(skk))
+
+
+def prLightPurple(skk): print("\033[94m {}\033[00m".format(skk))
+
+
+def prPurple(skk): print("\033[95m {}\033[00m".format(skk))
+
+
+def prCyan(skk): print("\033[96m {}\033[00m".format(skk))
+
+
+def prLightGray(skk): print("\033[97m {}\033[00m".format(skk))
+
+
+def prBlack(skk): print("\033[98m {}\033[00m".format(skk))
 
 
 import socket
@@ -85,9 +103,9 @@ def scanner(port):
 
 
 def main():
-    prGreen("─"*40)
+    prGreen("─" * 40)
     print(f"Scanning {str(int(max_range) + 1 - int(min_range))} ports in {ip}")
-    prGreen("─"*40)
+    prGreen("─" * 40)
     print("PORT          STATE        SERVICE")
     start = time.perf_counter()
     with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
@@ -96,10 +114,12 @@ def main():
             f.result()
     end = time.perf_counter()
 
-    prGreen("─"*40)
+    prGreen("─" * 40)
     print(f"Scanning Took {round(end - start, 2)}s")
 
 
 if __name__ == '__main__':
-    main()
-
+	try:
+		main()
+	except KeyboardInterrupt:
+		sys.exit()
