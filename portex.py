@@ -2,7 +2,12 @@
 ##########thelinuxuxer-choice#################
 #############subodha prabash ##########
 ###########port scanner ######
+
+# importing the necessary packages
+import time
+import sys
 import os
+
 #clear
 def clear_sc():
     # for windows OS
@@ -95,4 +100,6 @@ def main():
     print(f"Scanning Took {round(end - start, 2)}s")
 
 
-main()
+if __name__ == '__main__':
+    main()
+
